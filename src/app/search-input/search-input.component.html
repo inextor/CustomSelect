@@ -1,0 +1,15 @@
+<div class="dropdown w-100">
+	<div class="c_container_row form-control">
+		<div class="logo" [style.background-image]="'url('+(imagePath==null?defaultImagePath:imagePath)+')'" (click)="onClick()"></div>
+		<div class="a_row">
+			<a (click)="onItemSelected(null)" class="fr">X</a>
+			<div (click)="onClick()">{{primaryText |titlecase}}</div>
+		</div>
+	</div>
+	<div class="dropdown-menu show w-100 p-0 m-0"  *ngIf="items.length>0 && is_open">	
+		<div class="a_row" *ngFor="let item of items" (click)="onItemSelected(item)">
+			<div class="logo" [style.background-image]="'url('+(item.imagePath==null?defaultImagePath:item.imagePath)+')'"></div>
+			<div class="text">{{item.primaryText | titlecase}}</div>
+		</div>
+	</div>
+<div>

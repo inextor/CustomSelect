@@ -1,0 +1,49 @@
+.a_row .logo{
+	width: 40px;
+	height: 40px;
+	background-image: url('/assets/empty_image.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	display: inline-block;
+	float: left;
+	margin-right: 15px;
+}
+
+.c_container_row .logo
+{
+	width: 24px;
+	height: 24px;
+	background-image: url('/assets/empty_image.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	display: inline-block;
+	float: left;
+	margin-right: 15px;
+}
+.a_row
+{
+	overflow: hidden;
+	box-sizing: border-box;
+	min-height: 30px;
+	line-height: 30px;
+}
+
+.fr
+{
+	float:right;
+}
+.dropdown-menu>.a_row
+{
+	padding: 0.5rem 0.5rem;
+}
+.dropdown-menu>.a_row:hover
+{
+	background-color: #c3dbf7;
+}
+
+.dropdown-menu>.a_row:not(:last-child)
+{
+	border-bottom: 1px solid #edf2f9;
+}
